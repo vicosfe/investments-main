@@ -143,9 +143,44 @@ main{
 }
 .downHeader__nav li{
 	margin-right: 20px;
+	position: relative;
 }
-
-
+.dropNav{
+	position: absolute;
+	margin-top: 1.375rem;
+	left: 0;
+	width: 245px;
+	background-color: #f8f8f8;
+	color: #151515;
+	border-radius: 10px;
+	padding: 15px 10px;
+	font-size: 0.875rem;
+	font-family: "GothamPro";
+}
+.dropNav__content{
+	border-left: 1px solid #e3e3e3;
+	padding: 10px;
+	position: relative;
+}
+.dropNav__content::before{
+    content: " ";
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #f8f8f8;
+    border-width: 10px;
+    top: -35px;
+}
+.dropNav__content ul{
+	display: block;
+	padding: 0;
+}
+.dropNav__content li{
+	margin-bottom: 2.1875rem;
+}
 
 
 
