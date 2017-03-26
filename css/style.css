@@ -122,7 +122,28 @@ main{
 .ChangeLanguage i{
 	margin-left: 5px;
 }
-
+/************Нижния часть шапки****************/
+.downHeader__nav ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 9.375rem;
+	width: 100%;
+}
+.downHeader__nav a{
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-family: "GothamPro";
+	color: #151515;
+}
+.downHeader__nav li{
+	margin-right: 20px;
+}
 
 
 
