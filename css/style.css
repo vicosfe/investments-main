@@ -140,6 +140,7 @@ main{
 	font-size: 0.875rem;
 	font-family: "GothamPro";
 	color: #151515;
+	padding-bottom: 30px;
 }
 .downHeader__nav li{
 	margin-right: 20px;
@@ -156,6 +157,7 @@ main{
 	padding: 15px 10px;
 	font-size: 0.875rem;
 	font-family: "GothamPro";
+	display: none;
 }
 .dropNav__content{
 	border-left: 1px solid #e3e3e3;
@@ -181,6 +183,9 @@ main{
 .dropNav__content li{
 	margin-bottom: 2.1875rem;
 	width: 100%;
+}
+.downHeader__nav li:hover .dropNav{
+	display: block;
 }
 
 
