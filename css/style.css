@@ -164,6 +164,8 @@ main{
 	font-family: "GothamPro";
 	display: none;
 	z-index: 5;
+	-webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
 }
 .dropNav ul {
 	width: 100%;
@@ -237,13 +239,10 @@ main{
 	line-height: 3.375rem;
 	color: #fff;
 	margin: 0;
-	width: 50%;
-	-webkit-transform: translateX(10.4%);
-	-ms-transform: translateX(10.4%);
-	-o-transform: translateX(10.4%);
-	transform: translateX(10.4%);
+	width: 100%;
+	margin-left: 7%;
 	text-transform: uppercase;
-	max-width: 750px;
+	max-width: 870px;
 }
 .carousel-header-item2{
 	background-image: url(../images/macOS.jpg);
