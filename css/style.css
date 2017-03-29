@@ -64,7 +64,7 @@ main{
 }
 .formMainSearch__input{
 	border: 1px solid #e0e0e0;
-	border-radius: 17px;
+	border-radius: 30px;
 	outline: 0;
 	padding: 0.625rem 2.87rem;
 	background-color: #fafafa;
@@ -80,7 +80,7 @@ main{
 	color: #fff;
 	background-color: #313131;
 	border: 1px solid #313131;
-	border-radius: 17px;
+	border-radius: 30px;
 	outline: 0;
 	margin-left: -2.5rem;
 	font-size: 0.875rem;
@@ -123,6 +123,9 @@ main{
 	margin-left: 5px;
 }
 /************Нижния часть шапки****************/
+.downHeader__nav{
+	margin-bottom: 3.125rem;
+}
 .downHeader__nav ul{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -131,9 +134,11 @@ main{
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
-	margin: 0;
-	padding: 0 9.375rem;
+	padding: 0 3rem;
 	width: 100%;
+	max-width: 1400px;
+	min-width: 1240px;
+	margin: 0 auto;
 }
 .downHeader__nav a{
 	text-decoration: none;
@@ -158,6 +163,11 @@ main{
 	font-size: 0.875rem;
 	font-family: "GothamPro";
 	display: none;
+	z-index: 5;
+}
+.dropNav ul {
+	width: 100%;
+	min-width: 100%;
 }
 .dropNav__content{
 	border-left: 1px solid #e3e3e3;
@@ -187,6 +197,91 @@ main{
 .downHeader__nav li:hover .dropNav{
 	display: block;
 }
+/*************************Слайдер**********************/
+.downHeader__carousel {
+	width: 100%;
+	height: 710px;
+	position: relative;
+}
+.owl-carousel-header{
+	height: 100%;
+}
+.owl-controls{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+.itemCarousel{
+	height: 710px;
+	background-position: center center;
+}
+.carousel-header-item1{
+	background-image: url(../images/carousel1.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.carousel-header-item1 >h3{
+	font-size: 2.25rem;
+	font-family: "GothamPro-Bold";
+	line-height: 3.375rem;
+	color: #fff;
+	margin: 0;
+	width: 50%;
+	-webkit-transform: translateX(10.4%);
+	-ms-transform: translateX(10.4%);
+	-o-transform: translateX(10.4%);
+	transform: translateX(10.4%);
+	text-transform: uppercase;
+	max-width: 750px;
+}
+.carousel-header-item2{
+	background-image: url(../images/macOS.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.owl-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 100%;
+  	 
+}
+.owl-dot.active {
+    background: #f24e4e;
+}
+
+
+
+
+/*****************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

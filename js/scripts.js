@@ -1,28 +1,13 @@
-
-/**************************/
-	$(".nav-add-link-add").click(function() {
-    $(this).prev()[0].click(); 
-});
-
-	$(".nav-add-link-edit").click(function() {
-    $(this).prev()[0].click(); 
-});
-
-	$(".nav-add-link-zakazi").click(function() {
-    $(this).prev()[0].click(); 
-});
-
-	$(".nav-add-link-users").click(function() {
-    $(this).prev()[0].click(); 
-});
-
-	$(".nav-add-link-settings").click(function() {
-    $(this).prev()[0].click(); 
+$(document).ready(function(){
+$('.owl-carousel-header').owlCarousel({
+		items: 1,
+		dots: true,
+		loop: true,
+		autoplay: true,
+		/*nav: true,*/
+		autoplayTimeout: 6000,
+		smartSpeed: 1000,
 });
 
 
-	$(".tab-item").not(":first").hide();
-	$(".tab").click(function() {
-	$(".tab").removeClass("active-panel-adm").eq($(this).index()).addClass("active-panel-adm");
-	$(".tab-item").hide().eq($(this).index()).fadeIn()
-}).eq(0).addClass("active-panel-adm"); 
+});
