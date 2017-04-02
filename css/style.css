@@ -33,7 +33,9 @@ header{
 	overflow: hidden;
 }
 .topHeader{
-	padding: 3.125rem;
+	padding: 3.125rem 0;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 .topHeader__container{
 	display: -webkit-flex;
@@ -94,28 +96,47 @@ header{
 }
 
 
-.phoneNumbLanguage{
+.feedBackLanguage{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	font-size: 0.875rem;
 	font-family: "GothamPro";
-	width: 32%;
-	color: #151515;
-	min-width: 486px;
-}
-.phoneNumber{
 	width: 35%;
-
+	color: #151515;
+	-ms-align-items: center;
+	align-items: center;
+	min-width: 434px;
 }
-.phoneNumber i{
-	margin-right: 5px;
+.feedBack{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
+	width: 35%;
+	position: relative;
+	margin-right: 1.25rem;
+}
+.feedBack a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 6;
+}
+.feedBack__img{
+	margin-right: 0.6875rem;
 }
 .ChangeLanguage{
-	width: 30%;
+	width: 35%;
 }
 .ChangeLanguage a{
 	text-decoration: none;
@@ -129,6 +150,8 @@ header{
 }
 /************Нижния часть шапки****************/
 .downHeader__nav{
+	max-width: 1280px;
+	margin: 0 auto;
 	margin-bottom: 3.125rem;
 }
 .downHeader__nav ul{
@@ -139,7 +162,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
-	padding: 0 3rem;
+	padding: 0 ;
 	width: 100%;
 	max-width: 1875px;
 	min-width: 1240px;
