@@ -14,6 +14,8 @@ body{
 }
 main{
  z-index: 1;
+ margin: 0 auto;
+ padding: 0 1.25rem;
 }
 .centerBlock{
 	max-width: 1280px;
@@ -27,6 +29,9 @@ main{
 	clear: both;
 }
 /***************************Шапка************************/
+header{
+	margin-bottom: 2.1875rem;
+}
 .topHeader{
 	padding: 3.125rem;
 }
@@ -136,7 +141,7 @@ main{
 	list-style-type: none;
 	padding: 0 3rem;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1875px;
 	min-width: 1240px;
 	margin: 0 auto;
 }
@@ -262,62 +267,152 @@ main{
 .owl-dot.active {
     background: #f24e4e;
 }
+/****************************КОНТЕНТ*******************************/
 
 
 
-
-/*****************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*****************Контент*************************/
+/************Табы*************/
 .downNavigation{
-	padding: 0 3.125rem;
+	margin-bottom: 2.1875rem;
+	width: 100%;
 }
 .downNavigation ul{
-	padding: 0;
-	margin: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	list-style-type: none;
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+	padding: 0 ;
+
 }
 .downNavigation li{
-	list-style-type: none;
-	max-width: 445px;
-	width: 24%;
+	padding: 1.0625rem 3.125rem;
+	border: 1px solid #e0e0e0;	
+	max-width: 295px;
+	width: 100%;
 	text-align: center;
-	border: 1px solid #e0e0e0;
-	padding: 1rem 0;
+	position: relative;
+	height: 70px;
+}
+.downNavigation li:hover{
+	cursor: pointer;
 }
 .downNavigation li a{
+	line-height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	color: #151515;
 	text-decoration: none;
-	padding: 1rem 0;
+	font-family:  "GothamPro-Bold";
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	width: 75%;
 }
- .ff{
-	padding: 16px 0;
-	width: 24%;
-} 
-.ff li{
+
+.tabs-active{
+	color: #64baf6 !important;
+	border: 1px solid #64baf6 !important;
+}
+.tabs-active a{
+	color: #64baf6 !important;
+}
+/*************Контент****************/
+.centerContent{
+	max-width: 1280px;
+	margin: 0 auto;
 	width: 100%;
 }
+.siteBarLeftMain{
+	width: 23.8%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.siteBarLeftMain__item{
+	max-width: 295px;
+	width: 100%;
+	height: 130px;
+	-webkit-background-size: 150%;
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 1.25rem;	
+	position: relative;
+}
+.siteBarLeftMain__item--blockFilter{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1b1b1b;
+	opacity: .40;
+	z-index: 3;
+}
+.siteBarLeftMain__item--content{
+	position: relative;
+	height: 130px;
+	width: 100%;
+}
+
+.content__border{
+	border: 1px solid #fff;
+	position: absolute;
+	top: .625rem;
+	left: .625rem;
+	right: .625rem;
+	bottom: .625rem;
+	height: 110px;
+	z-index: 4;
+}
+.content__text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 85%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	z-index: 4;
+	line-height: 1.6875rem;
+}
+.content__text span{
+	font-size: 1.5rem;
+	font-family: "GothamPro";
+}
+.content__text p{
+	margin: 0;
+	font-size: .75rem;
+	font-family: "GothamPro";
+}
+.content__text--div{
+	font-size: 1.125rem !important;
+	font-family: "GothamPro-Bold" !important;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
