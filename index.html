@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/scripts.js"></script>
 	
@@ -34,7 +36,7 @@
 				</div>
 				<div class="feedBackLanguage">
 					<div class="feedBack">
-					<a href="#"></a>
+						<a href="#"></a>
 						<div class="feedBack__img">
 							<img src="images/feedBack.png" alt="">
 						</div>
@@ -387,23 +389,43 @@
 				</div>
 			</section>
 
-			<!-- <section>
+			<section>
 				<div class="wrapper__media">
+					<h2>МЕДИА</h2>
 					<div class="media">
-						<div class="media__left">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officia, natus et deserunt necessitatibus in iure possimus doloremque perspiciatis consectetur nisi aperiam ea iusto dicta dolorem alias dolore voluptatem laboriosam quaerat. Ducimus numquam ipsa dolor vitae, ea eveniet reiciendis rem maxime natus, blanditiis accusantium iure, suscipit excepturi doloribus dolores. Rem aut, expedita, ex aspernatur labore, necessitatibus ut at est doloremque ratione harum id consequatur error. A cupiditate quidem fugit rem maxime ullam officiis repellat nemo, nulla minus vel deleniti labore sint dignissimos corporis. Facilis dolor molestias porro est dolore obcaecati ullam non rem libero quia, nam consectetur, qui nostrum assumenda, officiis pariatur perspiciatis adipisci sed ad dolorem eligendi soluta dolores ipsum voluptas! Nulla sint architecto neque possimus non culpa ad. Harum culpa architecto rem distinctio, vero deserunt ipsum saepe voluptate dignissimos excepturi aperiam ducimus ut cupiditate maxime, quasi. Unde nesciunt dolores, quam! Deleniti sed alias incidunt, sunt repellendus error repellat officia ducimus at quas esse culpa, quaerat ratione. Maiores temporibus ipsa, expedita quis delectus excepturi praesentium. Numquam dicta tenetur soluta odio, repudiandae perferendis dolorem rerum neque laudantium exercitationem commodi ipsum quas facilis alias odit minima aliquid ipsa atque, repellendus porro possimus iure unde! Consectetur explicabo quibusdam nesciunt vel fugit, deserunt qui. Reprehenderit distinctio cum, molestias odio perspiciatis, quasi unde tempora quod esse quisquam dolores harum. Debitis dolore, animi tenetur tempora ipsa quibusdam beatae facere iusto placeat reiciendis voluptates neque eveniet, quae quas vitae officia a quisquam! Fuga sint similique tenetur quo asperiores saepe impedit quisquam? Nemo dignissimos placeat quis harum enim voluptatibus sapiente, officiis ad, ratione, aut architecto, soluta quas. Natus nostrum omnis, nam porro illo praesentium nihil! Doloribus quo odit consequuntur officia reprehenderit aspernatur voluptatem laboriosam delectus quasi repellat provident voluptatum temporibus, nostrum, mollitia soluta iure dolore assumenda ad. Placeat beatae enim, eius magnam modi maiores architecto sint eligendi.
+						<div class="media__left" style="background-image: url(images/news3.png);">
+							
 						</div>
 						<div class="media__right">
-							<div class="owl-carousel-media owl-theme owl-carousel">
-								<div class="itemCarousel news1"><img src="images/logo.png" alt="">дщкуь</div>
-								<div class="itemCarousel news2"><img src="images/news1.png" alt="">фывфыв</div>
+							<!-- Swiper -->
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide-item" style="background-image: url(images/carousel1.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news3.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news4.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news5.png);"></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-item" style="background-image: url(images/carousel1.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news3.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news4.png);"></div>
+										<div class="swiper-slide-item" style="background-image: url(images/news5.png);"></div>
+									</div>
+									
+								</div>
+								<!-- Add Pagination -->
+								<!-- 	<div class="swiper-pagination"></div> -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
 							</div>
+
 						</div>
 					</div>
 					
 				</div>
-			</section> -->
-		
+			</section>
+
 			<section>
 				<div class="usefulLinks">
 					<h2>ПОЛЕЗНЫЕ ССЫЛКИ</h2>
@@ -646,8 +668,48 @@
 
 				</div>
 			</section>
-
 		</main>
+
+		<footer class="footer">
+			<div class="centerBlock">
+				<div class="footer__nav">
+					<ul>
+						<li><a href="#">Инвестиционная деятельность</a></li>
+						<li><a href="#">Инвестиционные проекты</a></li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Документы</a></li>
+					</ul>
+				</div>
+				<div class="footer__info">
+					<div class="hotLine">
+						<div class="hotLine__text">
+							Горячая линия:
+						</div>
+						<div class="hotLine__number">
+							<div class="hotLine__number--item"><i class="fa fa-phone-square" aria-hidden="true"></i> +7 (8722) 55-07-57</div>
+							<div class="hotLine__number--item"><i class="fa fa-phone-square" aria-hidden="true"></i> +7 (8722) 55-45-57</div>
+						</div>
+					</div>
+
+					<div class="footer__info--logo">
+						<img src="images/logFoot.png" alt="">
+					</div>
+
+					<div class="footer__info--search">
+						<div class="footerSearch">
+							<form action="#" class="formFooterSearch">
+								<input type="search" placeholder="Поиск" name="footerSearch" class="formFooterSearch__input"> 
+								<span><i class="fa fa-search" aria-hidden="true"></i></span>
+								<a href="#" class="formFooterSearch__button">Найти</a>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
 
 	</body>
 	</html>
